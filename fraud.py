@@ -163,7 +163,7 @@ st.markdown("""
 # En-tête
 st.markdown("""
 <div class="main-header">
-    <h1>-Intelligence Artificiel- Système de Surveillance des Transactions</h1>
+    <h1>Intelligence Artificiel- Système de Surveillance des Transactions</h1>
     <p>Détection intelligente d'anomalies pour les opérations de décaissement des salaires</p>
 </div>
 """, unsafe_allow_html=True)
