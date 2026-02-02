@@ -10,7 +10,7 @@ import plotly.express as px
 
 # Configuration de la page
 st.set_page_config(
-    page_title="Banque de la République du Burundi - Système de Surveillance des Transactions", 
+    page_title="Intelligence Artificiel- Système de Surveillance des Transactions", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -163,7 +163,7 @@ st.markdown("""
 # En-tête
 st.markdown("""
 <div class="main-header">
-    <h1>Banque de la République du Burundi - Système de Surveillance des Transactions</h1>
+    <h1>-Intelligence Artificiel- Système de Surveillance des Transactions</h1>
     <p>Détection intelligente d'anomalies pour les opérations de décaissement des salaires</p>
 </div>
 """, unsafe_allow_html=True)
@@ -172,9 +172,9 @@ st.markdown("""
 with st.sidebar:
     st.markdown("### Configuration du Système")
     
-    st.markdown("#### Seuils de Risque")
-    high_risk_threshold = st.slider("Seuil de Risque Élevé", 3, 10, 7, help="Les transactions dépassant ce seuil nécessitent une attention immédiate")
-    medium_risk_threshold = st.slider("Seuil de Risque Moyen", 2, 7, 4, help="Les transactions dépassant ce seuil nécessitent un examen")
+    st.markdown("#### Catégories de risques")
+    high_risk_threshold = st.slider("Risque Élevé", 3, 10, 7, help="Les transactions dépassant ce seuil nécessitent une attention immédiate")
+    medium_risk_threshold = st.slider("Risque Moyen", 2, 7, 4, help="Les transactions dépassant ce seuil nécessitent un examen")
     
     st.markdown("#### Sensibilité de Détection")
     contamination = st.slider("Taux de Détection d'Anomalies (%)", 1, 20, 5, help="Pourcentage attendu de transactions anormales") / 100
